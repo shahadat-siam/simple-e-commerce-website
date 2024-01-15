@@ -149,6 +149,8 @@ body{
     margin: 40px 80px;
   }
  .new-arraival h2{
+    font-weight: 900px;
+    font-size: 2.4rem;
     font-family: 'Poiret One', sans-serif;
     color: #000000;
   }
@@ -208,17 +210,43 @@ body{
 }
 .image-hover img{
     width: 100%;
+    cursor: pointer;
 }
-  
- /* .image .shop-n::after{
-    content: '';
-    height: 2px;
-    width: 10%;
-    background-color: #ad9c78;
-    position: absolute;
-    bottom: -5px;
-    left: -3px;
- } */
+.box-content-hovewr .ccc h5{
+   font-family: 'Poiret One', sans-serif;
+    color: #000000;
+    padding-bottom: 10px;
+}
+ 
+.ccc{
+   text-align: center;
+   padding: 1rem 0;
+}
+.ccc a{
+   font-size: 1rem;
+   font-family:'Quicksand', sans-serif ;
+}
+.ccc del{
+   color: #918468;
+   padding-left: 4px;
+}
+/* .hover-content{
+   display:block;
+   background: #0e0d0d;
+   width: 150px;
+   padding: 10px 13px;
+}
+.hover-content i{
+   color: #fff;
+   padding: 0 9px;
+   font-size: 1.2rem;
+   transition: 0.3s;
+} */
+.hover-content i:hover{
+    color: #f70505;
+}
+ 
+ 
 
 @media screen and  (max-width:992px) {
     /* (min-width:599px) and */
@@ -281,7 +309,9 @@ body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
      }
-      
+     .image-hover{ 
+      grid-template-columns: repeat(2,1fr); 
+  }
 }
 
 @media (max-width:599px){
@@ -316,5 +346,8 @@ body{
      }
      .horizontal-line{
         display: none;
+     }
+     .image-hover{ 
+      grid-template-columns: repeat(1,1fr); 
      }
 }
