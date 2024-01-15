@@ -96,7 +96,7 @@ body{
 
 /* banar section start */
 .home{
-    background-image: url(hero4.png);
+    background-image: url(./hero4.png);
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -196,9 +196,18 @@ body{
     content: '';
     width: 100%;
     height: 1px;
-    background: #dbbfbf;
+    background: #e6e0e0;
     position: absolute;
-    top: 10px;
+    top: 20px;
+}
+.image-hover{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.image-hover img{
+    width: 100%;
 }
   
  /* .image .shop-n::after{
